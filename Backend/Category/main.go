@@ -20,7 +20,7 @@ func main() {
 	}))
 
 	routes.SetUpCategory(app)
-	err := app.Listen(":8002")
+	err := app.Listen(":8011")
 
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)

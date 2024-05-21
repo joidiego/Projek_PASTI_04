@@ -1,13 +1,12 @@
-package middlewares
+package middleware
 
 import (
-	database "Admin/Database/seeders"
+	database "Admin/Database"
 	"Admin/Models/entity"
 	utils "Admin/Utils"
 	"strings"
 	"time"
 
-	
 	"github.com/dgrijalva/jwt-go"
 	"github.com/gofiber/fiber/v2"
 )

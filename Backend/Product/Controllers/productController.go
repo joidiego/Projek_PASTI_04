@@ -103,7 +103,7 @@ func CreateProduct(c *fiber.Ctx) error {
 		})
 	}
 
-	image, err := c.FormFile("image")
+	image, err := c.FormFile("Image")
 	if err != nil {
 		return c.Status(400).JSON(fiber.Map{
 			"status":  "failed",
@@ -227,7 +227,7 @@ func UpdateProduct(c *fiber.Ctx) error {
 		product.CategoryID = uint(categoryId)
 	}
 
-	newImage, err := c.FormFile("image")
+	newImage, err := c.FormFile("Image")
 	if err == nil {
 		if product.Image != "" {
 			oldPath := filepath.Join(PathImageProduct, product.Image)

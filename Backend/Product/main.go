@@ -14,14 +14,11 @@ func main() {
 
 	app := fiber.New()
 
-	app.Use(cors.New(cors.Config{
-		AllowCredentials: true,
-		AllowOrigins:     "https://gofiber.io",
-	}))
+	app.Use(cors.New())
 
 	routes.SetUp(app)
 
-	err := app.Listen(":8006")
+	err := app.Listen(":8005")
 
 	if err != nil {
 		log.Fatalf("Failed to listen: %v", err)

@@ -12,7 +12,7 @@ type Product struct {
 	Price       string    `json:"price" gorm:"type:varchar(50)" validate:"required"`
 	CategoryID  uint      `json:"category_id" gorm:"index"`
 	CreatedAt   time.Time `json:"created_at" gorm:"autoCreateTime" db:"created_at"`
-	UpdatedAt   time.Time `json:"updated_at" gorm:"autoUpdateTime" db:"updated_at"`
+	UpdatedAt   time. Time `json:"updated_at" gorm:"autoUpdateTime" db:"updated_at"`
 }
 
 type RequestProductCreate struct {

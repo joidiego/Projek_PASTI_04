@@ -1,7 +1,7 @@
 package migration
 
 import (
-	database "Admin/Database/seeders"
+	database "Admin/Database"
 	"Admin/Models/entity"
 	"fmt"
 	"log"

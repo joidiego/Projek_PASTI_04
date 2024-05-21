@@ -25,7 +25,7 @@ func main() {
 	cartRoutes := r.Group("/api/carts")
 	{
 		cartRoutes.GET("/", cartController.All)
-		cartRoutes.POST("/", cartController.Insert)
+		cartRoutes.POST("/create", cartController.Insert)
 		cartRoutes.PUT("/:id", cartController.Update)
 		cartRoutes.DELETE("/:id", cartController.Delete)
 	}
